@@ -48,5 +48,11 @@ module.exports = {
     host: "localhost",
     hot: true,
     open: true,
+    historyApiFallback: {
+      rewrites: [
+        { from: /\.js$/, to: "/index.js" },
+        { from: /\.css$/, to: "/main.css" },
+      ],
+    },
   },
 };
